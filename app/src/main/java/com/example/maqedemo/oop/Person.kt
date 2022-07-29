@@ -21,4 +21,28 @@ class Person(val name: String, val lastName: String) {
     fun sub(a:Int, b:Int): String {
         return  "This is a user address"
     }
+
+    // Nested class
+
+    class  Men {
+
+        fun whoAmI(){
+            println("I ama men")
+        }
+
+        fun  getPhone(): String {
+            return "phone"
+        }
+
+    }
+
+    inner  class  Female {
+        fun whoAmI(){
+            println("I ama female")
+        }
+
+        fun  getFullName(): String {
+            return fullName
+        }
+    }
 }
